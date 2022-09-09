@@ -22,7 +22,7 @@ st.subheader("Please select your Height!")
 left_column, right_column = st.columns(2)
 with left_column:
     inp_species = st.radio(
-        'Gender of the Human:',
+        'Gender of the Person:',
         np.unique(data['Gender']))
 
 
