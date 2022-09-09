@@ -22,8 +22,8 @@ st.subheader("Please select your Height!")
 left_column, right_column = st.columns(2)
 with left_column:
     inp_species = st.radio(
-        'Name of the fish:',
-        np.unique(data['Species']))
+        'Gender of the Human:',
+        np.unique(data['Gender']))
 
 
 input_Length1 = st.slider('Height(cm)', 0.0, max(data["Height"]), 1.0)
