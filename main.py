@@ -27,7 +27,7 @@ with left_column:
         np.unique(data['Gender']))
 
 
-input_Length1 = st.slider('Height(inches)', 54.0, max(data["Height"]), 55.0)
+input_Length1 = st.slider('Height(cm)', 137.828, max(data["Height"]), 139.0)
 #input_Length2 = st.slider('Diagonal length(cm)', 0.0, max(data["Length2"]), 1.0)
 #input_Length3 = st.slider('Cross length(cm)', 0.0, max(data["Length3"]), 1.0)
 #input_Height = st.slider('Height(cm)', 0.0, max(data["Height"]), 1.0)
@@ -40,10 +40,10 @@ if st.button('Make Prediction'):
         [int(input_species), input_Length1], 0)
     prediction = best_xgboost_model.predict(inputs)
     print("final pred", np.squeeze(prediction, -1))
-    st.write(f"Your weight is: {np.squeeze(prediction, -1):.2f} pounds")
+    st.write(f"Your weight is: {np.squeeze(prediction, -1):.2f} kgs")
 
     st.write(f"Thank you {st.session_state.name}! I hope you liked it.")
     st.write(f"If you want to see more advanced applications you can follow me on [GitHub](https://github.com/naiksampan)")
     
-logging.basicConfig(filename='example.log')
-logging.debug('This message should go to the log file')
+# logging.basicConfig(filename='example.log')
+# logging.debug('This message should go to the log file')
