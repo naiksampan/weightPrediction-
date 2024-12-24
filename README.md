@@ -2,7 +2,7 @@
 
 **WeightPrediction** is a simple interactive application that predicts weight based on height input. This tool provides an easy and intuitive interface to estimate weight using a pre-trained machine learning model.  
 
-![Weight Prediction App Demo](https://via.placeholder.com/800x400?text=Add+Your+App+Screenshot+Here)  
+![Weight Prediction App Demo](image.png)  
 
 ## Features  
 
